@@ -72,10 +72,10 @@ struct Home: View {
                                 CarListItemView(item: car)
                             }
                             .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
                         }
                         .listStyle(.plain)
                         .background(Color.clear)
-                        .listRowSeparator(.hidden)
                     }
                     Spacer()
                 }
@@ -197,6 +197,6 @@ struct CarListItemView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 248)
-        .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+//        .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
     }
 }
